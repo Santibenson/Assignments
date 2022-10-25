@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Noto Sans Mono', monospace, sans-serif;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+h2 {
+  color: #0000ff;
+  letter-spacing: .3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.head-word {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 20px;
+  width: 600px;
+}
+
+.company {
+  color: #0000f1;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+}
+
+.head-word p {
+  font-size: 1.3rem;
+}
+
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+
+label {
+  display: block;
+  margin: 2px 0;
+}
+
+.input-control {
+  width: 100%;
+  height: 40px;
+  margin: 2px;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid;
+}
+
+.input-control:focus {
+  outline: none;
+  border: 2px solid #0000ff;
+}
+
+.input-radio {
+  padding: 5px;
+  width: unset;
+  margin: 0 .3rem 0 1rem;
+  vertical-align: middle;
+}
+
+.gender {
+  display: flex;
+  margin: -5px;
+  padding: 20px 0;
+}
+
+label[for="dob"]{
+  display: flex;
+  flex-direction: column;
+}
+
+input[name="dob"]{
+  width: 50%;
+}
+
+input[name="fav-color"]{
+  width: 30px;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn {
+  display: block;
+  width: auto;
+  height: 50px;
+  background-color: #0000f1;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 100%;
+  }
+  .head-word {
+    margin: 1rem 5rem;
+  justify-content: center;
+    align-items: center;
+}
+  main {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.company {
+  
+  font-size: 3rem;
+}
+
+.head-word p {
+  margin: 0 3rem;
+  font-size: 0.9rem;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .head-word {
+  display: none;
+}
+  .form-section {
+    margin: 20px;
+  }
+}
