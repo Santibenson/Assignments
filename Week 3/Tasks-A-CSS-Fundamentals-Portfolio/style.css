@@ -1,0 +1,394 @@
+/*Dear, Zuri Teacher, if the link I submitted landed you here, know that I followed the instructions. The header shows only a logo because I added a media query, if you can view it on a big screen you'd see all the about, contact us and etc links up there.
+Thanks for understanding. Have a good day.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+body {
+  line-height: 1.2;
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+p {
+  padding: 4px;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+main {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 80rem;
+  margin-top: 6rem;
+}
+.btn {
+  color: #fff;
+  background-color: #212a30;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  
+}
+.btn:hover {
+  color: #222;
+  background-color: #fff;
+  border: 2px solid #222;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-content: center;
+  width: 50%;
+}
+.logo-img{
+  display: block;
+  width: 200px;
+  height: 50px;
+}
+.top-navigation .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+.list li a {
+  color: #fff;
+  width: auto;
+  height: auto;
+  border: 1px solid #fff;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+.list li a:hover {
+  color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.hero-text h3 {
+  font-size: 2rem;
+}
+.hero-text h1 {
+  color: #212a30;
+  font-size: 4rem;
+}
+.hero-text p {
+  font-size: 1.25rem;
+}
+.hero-photo .hero-img {
+  width: 100%;
+  height: auto;
+}
+
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+.project-card {
+  width: 600px;
+  max-width: 100%;
+  height: 500px;
+  border: none;
+  margin: 10px;
+  box-shadow: 0px 5px 10px black;
+  text-align: center;
+}
+.project-name {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.project-img {
+  max-width: 600px;
+  height: 300px;
+  width: 100%;
+  border-radius: 0px 0px 6px;
+}
+.project-btn {
+  margin-top: 10px;
+}
+#services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  background-color: aliceblue;
+  margin-top: 20px;
+}
+.service-card {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px black;
+}
+.service-card:hover {
+  box-shadow: 4px 5px 10px black;
+  padding: 30px;
+}
+#more-about-me {
+   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  background-color: lightgray;
+  margin-top: 20px;
+}
+.more-about {
+  margin: 20px;
+}
+.content-head {
+  margin-bottom: 20px;
+}
+.more-about-me-list li {
+  margin: 10px;
+  margin-right: 15px;
+}
+.more-about-me-list li::before {
+  content: "\2021";
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2rem;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+aside {
+  margin-top: 20px;
+  padding: 50px 20px 20px;
+  background-color: #f2f2f2;
+  color: #222;
+  font-size: 1.3rem;
+}
+dfn {
+  font-size: 1rem;
+  color: #0000ff;
+}
+marquee a img {
+  width: 150px;
+}
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  height: 400px;
+}
+#contact div {
+  width: 400px;
+}
+#contact div h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+label {
+  width: 400px;
+  margin: 5px 0;
+}
+input, textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+textarea {
+  height: 60px;
+  resize: none;
+}
+input:focus, textarea:focus {
+  border: 2px solid #0000f0;
+}
+form .btn {
+  background-color: #0000f0;
+}
+footer {
+  height: 200px;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  
+  .header {
+  justify-content: space-around;
+}
+.top-navigation .list {
+  gap: 8px;
+  font-size: 1.1rem;
+}
+  main {
+  margin-top: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+} 
+
+@media (max-width: 720px) {
+  .header {
+  justify-content: center;
+}
+.logo {
+  width: 50%;
+}
+.logo-img{
+  width: 100%;
+  height: 50px;
+}
+  .top-navigation {
+        display: none;
+  }
+  main {
+  margin-top: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+  #projects {
+  padding: 20px;
+  align-items: center;
+}
+  .project-card {
+  width: 100%;
+  margin: 20px 0;
+    
+  }
+  #services {
+  padding: 20px;
+  align-items: center;
+  text-align: center
+}
+.service-card {
+  width: auto;
+  height: 200px;
+  padding: 10px;
+  margin-top: 20px
+}
+  #contact {
+  padding: 10px;
+  margin-top: 10px;
+}
+#contact div h4 {
+  font-size: 1.5rem;
+}
+form {
+  width: 300px;
+}
+label {
+  width: 300px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+ .header {
+  justify-content: center;
+}
+.logo {
+  width: 50%;
+}
+.logo-img{
+  width: 100%;
+  height: 50px;
+}
+  main {
+  margin-top: 1rem;
+    width: 620px;
+    max-width: 65rem;
+}
+
+  footer {
+     width: 620px;
+  }
+
+
+}

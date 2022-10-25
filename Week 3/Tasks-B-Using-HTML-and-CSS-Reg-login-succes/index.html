@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="head-word">
+        <h1 class="company">Yournal</h1>
+        <p>Connect with a community of independent writers. <br>Write, read, connect & publish to the world without
+          paying a dime. No credit card required.</p>
+      </div>
+    </section>
+    <section class="form-section">
+      <h2>Register</h2>
+      <p>To start writing. The world awaits your articles..</p>
+      <form>
+        <div class="inside-flex">
+          <label for="fname-input">
+            <input type="text" name="fname-input" id="fname-input" class="input-control" placeholder="First name"
+              required>
+          </label>
+
+          <label for="lname-input">
+            <input type="text" name="lname-input" id="lname-input" class="input-control" placeholder="Last name"
+              required>
+          </label>
+        </div>
+        <label for="pnumber-input">
+          <input type="tel" name="pnumber-input" id="pnumber-input" class="input-control" placeholder="Phone number"
+            required>
+        </label>
+        <label for="email-input">
+          <input type="email" name="email-input" id="email-input" class="input-control" placeholder="Email" required>
+        </label>
+        <div class="inside-flex">
+
+          <label for="password">
+            <input type="password" id="password" name="password" class="input-control" placeholder="New password"
+              required>
+          </label>
+          <label for="cpassword">
+            <input type="password" id="cpassword" name="cpassword" class="input-control" placeholder="Confirm password"
+              required>
+          </label>
+        </div>
+        <div class="inside-flex gender">
+          <label for="gender-select-male">
+            <input type="radio" id="gender-select-male" name="gender-select" class="input-radio">Male
+          </label>
+          <label for="gender-select-fmale">
+            <input type="radio" id="gender-select-fmale" name="gender-select" class="input-radio">Female
+          </label>
+          <label for="gender-select-custom">
+            <input type="radio" id="gender-select-custom" name="gender-select" class="input-radio">Custom
+          </label>
+        </div>
+
+        <label for="dob">Birthday
+          <input type="date" name="dob" id="dob" class="input-control">
+        </label>
+        <label for="fav-color">Favorite color?
+          <input type="color" name="fav-color" id="fav-color" class="input-radio">
+        </label>
+        <button class="btn" type="submit"><a href="success_page.html"></a>Create an account</button>
+      </form>
+      <div>
+        <p>Or click <a href="login.html">here</a> to login if you already registered</p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
